@@ -1,0 +1,53 @@
+.pBody {
+    font-family: "Noto Sans Armenian", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: #2e2e2e;
+    background-color: #e8e8e8;
+    user-select: none;
+}
+
+.pBody a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pWrapper {
+    padding: 30px 70px 30px 70px;
+}
+
+.navItems li {
+    list-style: none;
+}
+
+.navItem, .navButtons {
+    padding: 10px;
+}
+
+.navItem.logo .fa.fa-slack {
+    font-size: 48px;
+}
+
+.navItem.ucp .fa.fa-user {
+    font-size: 48px;
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.navButtons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.navButtons .navItem:hover {
+    text-decoration: dashed;
+}
