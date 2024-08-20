@@ -1,12 +1,27 @@
+:root {
+    --pageBg: #e8e8e8;
+    --contentBg: #FFFFFF;
+    --textColor: #282828;
+    --accentColor : #9f51a7;
+    --accent2Color: #000;
+}
+
+* {
+    user-select: none;
+    transition: all 0.8s;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .pBody {
     font-family: "Noto Sans Armenian", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-    color: #2e2e2e;
-    background-color: #e8e8e8;
-    user-select: none;
+    color: var(--textColor);
+    background-color: var(--pageBg);
 }
 
 .pBody a {
@@ -15,7 +30,7 @@
 }
 
 .pWrapper {
-    padding: 30px 70px 30px 70px;
+    padding: 20px 70px 30px 70px;
 }
 
 .navItems li {
@@ -26,7 +41,7 @@
     padding: 10px;
 }
 
-.navItem.logo .fa.fa-slack {
+.navItem.logo .fa.fa-infinity {
     font-size: 48px;
 }
 
@@ -37,8 +52,7 @@
 .navItems {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-color: #ffffff;
+    justify-content: space-between;
     border-radius: 50px;
 }
 
@@ -46,8 +60,42 @@
     display: flex;
     justify-content: space-evenly;
     width: 50%;
+    align-items: center;
+    transition: all 0.1s;
 }
 
-.navButtons .navItem:hover {
-    text-decoration: dashed;
+.navButtons a {
+    transition: all 0.01s;
+}
+
+
+.navButtons a:hover {
+    border-bottom: 2px dotted var(--accentColor);
+}
+
+.navItem i:before {
+    padding-right: 10px;
+}
+
+.pContent {
+    padding: 60px 0px 60px 0px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.contentBlock {
+    padding: 200px;
+    background: var(--contentBg);
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
+}
+
+.footerWrapper {
+    padding: 30px;
+    background: var(--contentBg);
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
 }
