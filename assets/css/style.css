@@ -99,3 +99,20 @@
     border-radius: 20px;
     box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--pageBg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accentColor, 10%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accentColor);
+}
