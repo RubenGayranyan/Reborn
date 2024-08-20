@@ -101,7 +101,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -109,7 +109,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--accentColor, 10%);
+    background: var(--accentColor, 0.1);
     border-radius: 10px;
 }
 
