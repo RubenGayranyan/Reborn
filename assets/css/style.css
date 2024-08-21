@@ -1,7 +1,7 @@
 :root {
     --pageBg: #e8e8e8;
     --contentBg: #FFFFFF;
-    --textColor: #282828;
+    --textColor: rgba(224, 224, 224 0.8);
     --accentColor : #9f51a7;
     --accent2Color: #000;
 }
@@ -33,7 +33,7 @@
     padding: 20px 70px 30px 70px;
 }
 
-.navItems li {
+li {
     list-style: none;
 }
 
@@ -100,6 +100,54 @@
     box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
 }
 
+.footerElemetns {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.copyrightLogo {
+	font-size: 60px;
+	padding-bottom: 10px;
+}
+
+.copyrightLogo i:hover {
+	transform: scale(1.2);
+}
+
+.copyrightText {
+	font-size: 12px;
+}
+
+.footerRight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.6;
+}
+
+.fNavButtons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    transition: all 0.1s;
+}
+
+.fNavButtons a {
+    transition: all 0.01s;
+}
+
+
+.fNavButtons a:hover {
+    font-weight: bold;
+}
+
+.fNavItem i:before {
+    padding-right: 10px;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -116,3 +164,22 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--accentColor);
 }
+
+.footerSocialMedia {
+	font-size: 32px;
+}
+
+.fa-brands, .fa-gamepad { font-size: 32px; }
+.fa-brands:hover, .fa-gamepad:hover { transform: scale(1.1); }
+.fa-brands.fa-facebook { color: #1877F2; }
+.fa-brands.fa-instagram {
+	color: transparent;
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	background-clip: text;
+}
+.fa-brands.fa-youtube { color: #FF0000; }
+.fa-brands.fa-vk { color: #4C75A3; }
+.fa-brands.fa-telegram { color: #24A1DE; }
+.fa-brands.fa-x-twitter { color: #14171A; }
+.fa.fa-gamepad { color: var(--accentColor); }
