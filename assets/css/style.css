@@ -26,9 +26,9 @@
     background-color: var(--pageBg);
 }
 
-.pBody a {
-    color: inherit;
-    text-decoration: none;
+a, a:hover {
+    color: inherit !important;
+    text-decoration: none !important;
 }
 
 .pWrapper {

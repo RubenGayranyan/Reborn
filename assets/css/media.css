@@ -5,11 +5,8 @@
 }
 
 @media only screen and (min-width: 1020px) {
-	.mobileNav {
-		display: none;
-	}
-	.mobileNavBar {
-		display: none;
+	.mobileNavBar, .mobileNav {
+		display: none !important;
 	}
 }
 
