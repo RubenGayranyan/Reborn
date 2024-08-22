@@ -1,5 +1,53 @@
 @media only screen and (max-width: 1300px) {
-    .fNavItem i , .navItem i{
+    .fNavItem i , .navButtons .navItem i{
         display: none;
     }
+}
+
+@media only screen and (min-width: 1020px) {
+	.mobileNav {
+		display: none;
+	}
+	.mobileNavBar {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	.pContent {
+		grid-template-columns: repeat(1, 2fr);
+	}
+}
+
+@media only screen and (max-width: 1020px) {
+	.navButtons {
+		display: none;
+	}
+	.mobileNavBar {
+		display: block !important;
+		color: var(--accentColor);
+		font-size: 48px;
+		cursor: pointer;
+	}
+	.pWrapper {
+	    padding: 10px 20px 10px 20px;
+	}
+}
+
+@media only screen and (max-width: 910px) {
+	.footerElemetns {
+		flex-direction: column;
+	}
+	.footerRight {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.fNavButtons {
+		flex-direction: column;
+	}
+	.pWrapper {
+	    padding: 5px 10px 5px 10px;
+	}
 }
