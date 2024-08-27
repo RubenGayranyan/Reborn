@@ -1,0 +1,151 @@
+.contentBlock {
+    width: 100%;
+    background: var(--contentBg);
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
+}
+
+.contentBlockWrapper {
+	padding: 30px;
+}
+
+.padding {
+    padding: 30px; 
+}
+
+/* HOW TO START */
+
+.howToStart {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-between;
+    min-height: 90vh;
+}
+
+.blockhow2 {
+    border-radius: 6px;
+    background-color: var(--contentBg);
+    box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
+    width: 262px;
+    height: 400px;
+    z-index: 113;
+    margin: 0px 15px;
+    float: left;
+    position: relative;
+}
+
+.blockhow3 {
+    border-radius: 6px;
+    background-color: var(--contentBg);
+    box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.1);
+    width: 78px;
+    height: 132x;
+    z-index: 113;
+    margin: 0px 0px;
+    float: left;
+    position: relative;
+}
+
+.howtag{
+    display: block;
+    width: 46px;
+    height: 24px;
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    background: url(../images/how/tag.png) center center;
+}
+
+.texthow2{
+    font-size: 13px;
+    color: rgb(155, 162, 178);
+    font-weight: bold;
+    line-height: 1.4;
+    text-align: center;
+    -moz-transform: matrix( 0.99836906739403,0,0,0.99891043724204,0,0);
+    -webkit-transform: matrix( 0.99836906739403,0,0,0.99891043724204,0,0);
+    -ms-transform: matrix( 0.99836906739403,0,0,0.99891043724204,0,0);
+    position: absolute;
+    left: 30px;
+    top: 280px;
+    width: 200.678px;
+    height: 32.023px;
+    z-index: 114;
+}
+
+.Stroke {
+    box-shadow: 0px 3px 35px 0px rgb(0 0 0 / 65%);
+    border-radius: 6px;
+    position: absolute;
+    left: 18px;
+    bottom: 16px;
+    width: 222px;
+    height: 42px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mb {
+    font-size: 12px;
+    color: #9BA2B2;
+    font-weight: bold;
+    line-height: 3.0;
+    padding-right: 10px;
+    border-right: 1px solid var(--pageBg);
+}
+.Strokedown {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 2.2;
+    padding: 5px 10px;
+}
+
+.Stroke:hover {
+    border: 1px dashed var(--accent2Color);
+}
+
+.downloadExtension {
+    font-size: 9px;
+}
+
+.blockhow2:hover{
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(225, 225, 225, 0.1);
+    -moz-box-shadow:    0px 0px 15px 0px rgba(225, 225, 225, 0.1);
+    box-shadow:         0px 0px 15px 0px rgba(225, 225, 225, 0.1); 
+}
+
+.howbg1{
+    width: 262px;
+    height: 350px;
+    top: -50px;
+    position: absolute;    
+    background: url(../images/how/1.png) no-repeat top center;
+}
+
+.howbg2{
+    width: 262px;
+    height: 350px;
+    top: -50px;
+    position: absolute;    
+    background: url(../images/how/2.png) no-repeat top center;
+}
+
+.howbg3{
+    width: 262px;
+    height: 350px;
+    top: -50px;
+    position: absolute;    
+    background: url(../images/how/3.png) no-repeat top center;
+}
+
+.howbg4{
+    width: 262px;
+    height: 350px;
+    top: -50px;
+    position: absolute;    
+    background: url(../images/how/4.png) no-repeat top center;
+}

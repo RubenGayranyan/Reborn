@@ -1,10 +1,10 @@
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1020px) {
     .fNavItem i , .navButtons .navItem i{
         display: none;
     }
 }
 
-@media only screen and (min-width: 1020px) {
+@media only screen and (min-width: 750px) {
 	.mobileNavBar, .mobileNav {
 		display: none !important;
 	}
@@ -16,7 +16,7 @@
 	}
 }
 
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 750px) {
 	.navButtons {
 		display: none;
 	}
@@ -47,4 +47,10 @@
 	.pWrapper {
 	    padding: 5px 10px 5px 10px;
 	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.donateContentBlock, .ucpContentBlock {
+    	width: 100%;
+    }
 }

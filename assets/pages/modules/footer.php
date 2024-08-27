@@ -11,8 +11,7 @@
 		        <a href="/"><li class="fNavItem home"><i class="fa fa-home"></i>Գլխվոր</li></a>
 		        <a href="forum"><li class="fNavItem forum"><i class="fa fa-comments"></i>Ֆորում</li></a>
 		        <a href="?page=2"><li class="fNavItem donate"><i class="fa fa-cart-shopping"></i>Դոնատ</li></a>
-		        <a href="?page=3"><li class="fNavItem about"><i class="fa fa-desktop"></i>Մեր մասին</li></a>
-		        <a href="?page=4"><li class="fNavItem ucp"><i class="fa fa-right-to-bracket"></i>Մուտք</li></a>
+		        <a href="?page=3"><li class="fNavItem ucp"><i class="fa fa-right-to-bracket"></i>Մուտք</li></a>
 		    </div>
 		    <div class="footerSocialMedia">
 		        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>

@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap);
-@import "media.css";
+@import "home.css";
 @import "donate.css";
 @import "ucp.css";
 
@@ -86,24 +86,6 @@ li {
     padding: 60px 0px 60px 0px;
 }
 
-.pContent .homePage {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
-    grid-auto-rows: minmax(100px, auto);
-}
-
-.contentBlock {
-    width: 100%;
-    background: var(--contentBg);
-    border-radius: 50px;
-    box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
-}
-
-.contentBlockWrapper {
-	padding: 30px;
-}
-
 .footerWrapper {
     padding: 30px;
     background: var(--contentBg);
@@ -174,9 +156,9 @@ li {
 .mNavButtons {
 	display: flex;
 	flex-direction: column;
-    	align-items: center;
-    	width: 100%;
-    	font-size: 20px;
+	align-items: center;
+	width: 100%;
+	font-size: 20px;
 	text-transform: uppercase;
 	line-height: 3;
 }
