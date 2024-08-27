@@ -1,0 +1,70 @@
+.donateSection {
+    display: flex;
+    justify-content: center;
+}
+.donateContentBlock {
+    width: 50%;
+    background: var(--contentBg);
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
+}
+.donateContentBlockWrapper {
+    padding: 48px;
+}
+
+.donateTitle {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.donateInputBlock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.inputTitle {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.inputField {
+    padding: 18px;
+    border-radius: 10px;
+    background: var(--pageBg);
+    color: var(--textColor);
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+
+.donateInputBlock input:focus {
+    box-shadow: 0px 0px 4px 4px var(--accentColor);
+}
+
+.donateInputBlock input::-webkit-outer-spin-button,
+.donateInputBlock input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.donateInputBlock input[type=number]{
+    -moz-appearance: textfield;
+}
+
+.donateButton {
+    width: 100%;
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--accentColor);
+    border: none;
+    border-radius: 50px;
+    color: var(--textColor);
+    cursor: pointer;
+}
+
+.donateButton:hover {
+    background: var(--accent2Color);
+}

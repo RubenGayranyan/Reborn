@@ -1,11 +1,13 @@
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap);
+@import "media.css";
+@import "donate.css";
 
 :root {
     --pageBg: #171717;
     --contentBg: #202020;
     --textColor: rgba(224, 224, 224, 0.8);
     --accentColor: #9f51a7;
-    --accent2Color: #000;
+    --accent2Color: #614164;
 }
 
 * {
