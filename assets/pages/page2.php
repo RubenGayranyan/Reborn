@@ -3,7 +3,7 @@
 <div class="donateSection">
 	<div class="donateContentBlock">
 		<div class="donateContentBlockWrapper">
-			<form class="donateForm" method="post" action="#">
+			<form class="donateForm">
 				<div class="donateTitle">Հաշվի համալրում</div>
 				<div class="donateInputBlock">
 					<div class="inputTitle">Մուտքագրեք Ձեր նիկ-նեյմը</div>
