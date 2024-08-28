@@ -12,6 +12,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Armenian:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body class="pBody">
+        <div class="preloader">
+          <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+          </div>
+        </div>
+
+        </body>
     	<?php
             global $page_id;
             $page_id = ( isset( $_REQUEST['page'] ) ) ? (int) $_REQUEST['page'] : 1;

@@ -2,9 +2,16 @@
 <div class="homePage">
     <section id="welcome" class="welcomeSection">
         <div class="welcomeBlock">
-            <strong>SA:MP</strong> - это многопользовательская версия GTA San Andreas. В сампе ты можешь быть кем угодно, начиная бездомным перед тобой открывается множество дорог: пройти путь от наркодиллера до главы мафии, от простого солдата или полицейского до главнокомандующего - смысл RolePlay режима в том что всё зависит только от тебя! Таким образом, ты можешь попробовать реализовать свои любые, даже самые смелые, идеи, ведь команда разработчиков данного проекта добавляет всё новые захватывающие возможности ролевой игры в GTA San Andreas по сети. 
-            <br /><br />
-            <a href="#howtostart" class="gotoStart"><div class="htpButton">Ինչպե՞ս սկսել խաղալ</div></a>
+            <div class="slider">
+                <img src="/assets/images/welcome.png" class="sliderImg">
+                <div class="sliderText">
+                    <p class="svrName">Reborn</p>
+                    <p class="svrName" style="padding-block: 10px;">Role Play</p>
+                    <p class="adText">Մուլտիփլեյերային խաղ բաց աշխարհով, որտեղ կարող ես իրականացնել քո երազանքները։</p>
+                    <p class="adText">Ընտրի՛ր քո ճանապարհը, այն միայն քեզնից է կախված։</p>
+                </div>
+            </div>
+            <center><a href="#howtostart" class="gotoStart"><div class="htpButton">Ինչպե՞ս սկսել խաղալ</div></a></center>
         </div>
     </section>
     <div class="padding"></div>

@@ -17,6 +17,12 @@
 }
 
 @media only screen and (max-width: 750px) {
+	.sliderImg {
+		width: 450px;
+	}
+	.htpButton {
+		width: 50%;
+	}
 	.navButtons {
 		display: none;
 	}
