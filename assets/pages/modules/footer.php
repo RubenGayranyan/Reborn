@@ -20,7 +20,6 @@
 		        <a href="#" title="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
 		        <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
 		        <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
-		        <a href="#" title="Պատճենել սերվերի IP-հասցեն"><i class="fa fa-gamepad"></i></a>
 		    </div>
 		</div>
 		    </div>
