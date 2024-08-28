@@ -54,3 +54,28 @@
     	width: 100%;
     }
 }
+
+@media only screen and (max-width: 650px) {
+	.htpBlock {
+		display: flex;
+    	flex-direction: column;
+	}
+}
+
+@media only screen and (min-width: 650px) and (max-width: 1320px) {
+	.htpBlock {
+		display: grid;
+		justify-content: center;
+		justify-items: center;
+		grid-template-columns: 50% 2fr;
+	}
+}
+
+@media only screen and (max-width: 1320px) {
+	.monitorSection {
+		width: 100%;
+	}
+	.blockhow2 {
+		margin-bottom: 100px;
+	}
+}

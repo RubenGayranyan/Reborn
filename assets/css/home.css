@@ -13,6 +13,43 @@
     padding: 50px; 
 }
 
+#monitoring, #howtostart {
+  scroll-margin-block-start: 45px; 
+}
+
+.welcomeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcomeBlock {
+    width: 80%;
+}
+
+.htpButton {
+    width: 30%;
+    margin-top: 30px;
+    padding: 20px;
+    background: var(--accentColor);
+    border: none;
+    border-radius: 10px;
+    color: var(--textColor);
+    cursor: pointer;
+    font-weight:bold;
+    text-align:center;
+}
+
+.gotoStart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.htpButton:hover {
+    background: var(--accent2Color);
+}
+
 /* HOW TO START */
 
 .howToStart {
@@ -34,6 +71,14 @@
     margin: 0px 15px;
     float: left;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.blockhow2.element-show, .monitoring.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
 }
 
 .blockhow3 {
@@ -195,6 +240,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
 }
 
 .monitorSection {

@@ -1,15 +1,15 @@
 <title> SA:MP | Reborn Role Play</title>
 <div class="homePage">
-    <section id="welcome" class="welcomeSection" style="width: 70%;display:flex;flex-direction:column; justify-content: center;">
-        <div>
+    <section id="welcome" class="welcomeSection">
+        <div class="welcomeBlock">
             <strong>SA:MP</strong> - это многопользовательская версия GTA San Andreas. В сампе ты можешь быть кем угодно, начиная бездомным перед тобой открывается множество дорог: пройти путь от наркодиллера до главы мафии, от простого солдата или полицейского до главнокомандующего - смысл RolePlay режима в том что всё зависит только от тебя! Таким образом, ты можешь попробовать реализовать свои любые, даже самые смелые, идеи, ведь команда разработчиков данного проекта добавляет всё новые захватывающие возможности ролевой игры в GTA San Andreas по сети. 
             <br /><br />
-            <a href="#howtostart" class="gotoStart"><div class="ucpButton" style="font-weight:bold;text-align:center;border-radius:15px;">Ինչպե՞ս սկսել խաղալ</div></a>
+            <a href="#howtostart" class="gotoStart"><div class="htpButton">Ինչպե՞ս սկսել խաղալ</div></a>
         </div>
     </section>
     <div class="padding"></div>
     <section id="howtostart" class="howToStart">
-        <div>
+        <div class="htpBlock">
             <div class="blockhow2">
                 <div class="howbg1"></div>
                 <span class="howtag"></span>
@@ -81,8 +81,6 @@
 
                 $serverInfoVar = $serverInfo['players'] / $serverInfo['maxplayers'] * 100;
             }
-            else
-                echo "error";
         ?>
 
         <div class="circular-progress" data-inner-circle-color="none" data-percentage=<?php echo intval($serverInfoVar); ?> data-progress-color="var(--accentColor)" data-bg-color="rgba(255, 255, 255, 0.1)">
@@ -142,3 +140,26 @@
         </div>
     </section>
 </div>
+
+<script>
+    function onEntry(entry) {
+      entry.forEach(change => {
+        if (change.isIntersecting) {
+         change.target.classList.add('element-show');
+        }
+      });
+    }
+
+    let options = {
+      threshold: [0.5] };
+    let observer = new IntersectionObserver(onEntry, options);
+    let loadHTP = document.querySelectorAll('.blockhow2');
+    let loadMonitor = document.querySelectorAll('.monitoring');
+
+    for (let elm of loadHTP) {
+      observer.observe(elm);
+    }
+    for (let elm of loadMonitor) {
+      observer.observe(elm);
+    }
+</script>

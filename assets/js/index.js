@@ -1,5 +1,3 @@
-
-
 function toggleMobileNavigation() {
  	let navBar = document.getElementById("mobileNav");
 	if(navBar.style.display === "none") {
@@ -8,3 +6,4 @@ function toggleMobileNavigation() {
 	    navBar.style.display = "none";
 	}
 };
+
