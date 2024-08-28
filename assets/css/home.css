@@ -10,7 +10,7 @@
 }
 
 .padding {
-    padding: 30px; 
+    padding: 50px; 
 }
 
 /* HOW TO START */
@@ -148,4 +148,67 @@
     top: -50px;
     position: absolute;    
     background: url(../images/how/4.png) no-repeat top center;
+}
+
+/* MONITORING */
+
+.circular-progress {
+    width: var(--progress-bar-height);
+    height: var(--progress-bar-height);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner-circle {
+  position: absolute;
+  width: calc(var(--progress-bar-width) - 30px);
+  height: calc(var(--progress-bar-height) - 30px);
+  border-radius: 50%;
+  background-color: var(--pageBg);
+}
+
+.percentage {
+    position: relative;
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --progress-bar-width: 15rem;
+    --progress-bar-height: 15rem;
+    --font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    --progress-bar-width: 10rem;
+    --progress-bar-height: 10rem;
+    --font-size: 1rem;
+  }
+}
+
+.monitoring {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.monitorSection {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding-top: 30px;
+}
+.monitorContentBlock {
+    width: 100%;
+    background: var(--contentBg);
+    border-radius: 15px;
+    box-shadow: 0px 0px 6px 6px rgb(0 0 0 / 10%);
+}
+.monitorContentBlockWrapper {
+    padding: 48px;
 }

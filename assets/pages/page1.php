@@ -1,8 +1,10 @@
 <title> SA:MP | Reborn Role Play</title>
 <div class="homePage">
-    <section id="welcome" class="welcomeSection">
-        <div style="width: 60%;">
+    <section id="welcome" class="welcomeSection" style="width: 70%;display:flex;flex-direction:column; justify-content: center;">
+        <div>
             <strong>SA:MP</strong> - это многопользовательская версия GTA San Andreas. В сампе ты можешь быть кем угодно, начиная бездомным перед тобой открывается множество дорог: пройти путь от наркодиллера до главы мафии, от простого солдата или полицейского до главнокомандующего - смысл RolePlay режима в том что всё зависит только от тебя! Таким образом, ты можешь попробовать реализовать свои любые, даже самые смелые, идеи, ведь команда разработчиков данного проекта добавляет всё новые захватывающие возможности ролевой игры в GTA San Andreas по сети. 
+            <br /><br />
+            <a href="#howtostart" class="gotoStart"><div class="ucpButton" style="font-weight:bold;text-align:center;border-radius:15px;">Ինչպե՞ս սկսել խաղալ</div></a>
         </div>
     </section>
     <div class="padding"></div>
@@ -54,7 +56,7 @@
             <div class="blockhow2">
                 <div class="howbg4"></div>
                 <div class="texthow2">Ավելացրեք սերվերը սիրելի սերվերների ցանկում</div>
-                <a href="samp://127.0.0.1">
+                <a href="#monitoring">
                     <div class="Stroke">
                         <div class="Strokedown">
                             Ավելացնել
@@ -64,7 +66,79 @@
             </div>
         </div>
     </section>
-    <section id="monitoring" class="monitoringPage">
-        
+    <div class="padding"></div>
+    <section id="monitoring" class="monitoring">
+        <?php
+            $serverBind = '46.174.48.235';
+            $serverPort = '7777';
+            require_once("modules/SampQueryAPI.php"); 
+
+            $query = new SampQueryAPI($serverBind, $serverPort);
+            if($query->isOnline())
+            {
+                $serverInfo = $query->getInfo(); 
+                $serverRules = $query->getRules(); 
+
+                $serverInfoVar = $serverInfo['players'] / $serverInfo['maxplayers'] * 100;
+            }
+            else
+                echo "error";
+        ?>
+
+        <div class="circular-progress" data-inner-circle-color="none" data-percentage=<?php echo intval($serverInfoVar); ?> data-progress-color="var(--accentColor)" data-bg-color="rgba(255, 255, 255, 0.1)">
+            <div class="inner-circle"></div>
+            <p class="percentage">0%</p>
+        </div>
+        <script type="text/javascript">
+            const circularProgress = document.querySelectorAll(".circular-progress");
+            Array.from(circularProgress).forEach((progressBar) => {
+              const progressValue = progressBar.querySelector(".percentage");
+              const innerCircle = progressBar.querySelector(".inner-circle");
+              let startValue = 0,
+                endValue = Number(progressBar.getAttribute("data-percentage")),
+                speed = 50,
+                progressColor = progressBar.getAttribute("data-progress-color");
+
+              const progress = setInterval(() => {
+                startValue++;
+                progressValue.textContent = `${startValue}%`;
+                progressValue.style.color = `${progressColor}`;
+
+                innerCircle.style.backgroundColor = `${progressBar.getAttribute(
+                  "data-inner-circle-color"
+                )}`;
+
+                progressBar.style.background = `conic-gradient(${progressColor} ${
+                  startValue * 3.6
+                }deg,${progressBar.getAttribute("data-bg-color")} 0deg)`;
+                if (startValue === endValue) {
+                  clearInterval(progress);
+                }
+              }, speed);
+            });
+        </script>
+        <div class="monitorSection">
+            <div class="monitorContentBlock">
+                <div class="monitorContentBlockWrapper">
+                    <center><h3>Սերվերի մասին</h3></center> <br />
+                    <p><strong>Սերվերի անունը՝</strong> <?php echo $serverInfo['hostname']; ?></p>
+                    <p><strong>Սերվերի IP-հասցեն՝</strong> <?php echo $serverBind . ':' . $serverPort; ?></p>
+                    <p>
+                        <strong>Սերվերի կարգավիճակը՝</strong>
+                        <?php
+                            if ($serverInfo['password'] == 0 && $serverInfo['maxplayers'] != 0)
+                                echo '<span style="color:green;">Online</span>';
+                            elseif ($serverInfo['password'] != 0 && $serverInfo['maxplayers'] != 0)
+                                echo '<span style="color:yellow;">Տեխնիկական աշխատանքներ</span>';
+                            else
+                                echo '<span style="color:red;">Offline</span>'
+                        ?>
+                    </p>
+                    <p><strong>Խաղացողների քանակը՝</strong> <?php echo $serverInfo['players']; ?>/ <?php echo $serverInfo['maxplayers']; ?>-ից</p>
+                    <br>
+                    <a href="samp://127.0.0.1" class="gotoStart"><div class="ucpButton" style="font-weight:bold;text-align:center;border-radius:15px;">Միացի՛ր մեզ հիմա</div></a>
+                </div>
+            </div>
+        </div>
     </section>
 </div>

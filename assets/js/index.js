@@ -1,3 +1,5 @@
+
+
 function toggleMobileNavigation() {
  	let navBar = document.getElementById("mobileNav");
 	if(navBar.style.display === "none") {

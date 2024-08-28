@@ -16,7 +16,6 @@
 		    <div class="footerSocialMedia">
 		        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
 		        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
-		        <a href="#" title="Gmail"><i class="fa fa-envelope"></i></a>
 		        <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
 		        <a href="#" title="ВКонтакте"><i class="fa-brands fa-vk"></i></a>
 		        <a href="#" title="Telegram"><i class="fa-brands fa-telegram"></i></a>

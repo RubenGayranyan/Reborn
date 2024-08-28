@@ -9,6 +9,8 @@
     --textColor: rgba(224, 224, 224, 0.8);
     --accentColor: #9f51a7;
     --accent2Color: #614164;
+    --progress-bar-width: 20rem;
+    --progress-bar-height: 20rem;
 }
 
 * {
@@ -193,7 +195,6 @@ li {
 	background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 	background-clip: text;
 }
-.fa.fa-envelope { color: #3b60c4; }
 .fa-brands.fa-youtube { color: #FF0000; }
 .fa-brands.fa-vk { color: #4C75A3; }
 .fa-brands.fa-telegram { color: #24A1DE; }
