@@ -25,7 +25,9 @@ html {
     scroll-behavior: smooth;
 }
 
-img { pointer-events: none; }
+img {
+    pointer-events: none;
+}
 
 .pBody {
     font-family: "Noto Sans Armenian", sans-serif;
@@ -161,7 +163,7 @@ li {
 }
 
 .pContent {
-    padding: 60px 0px 60px 0px;
+    padding: 10px 0px 60px 0px;
 }
 
 .footerWrapper {

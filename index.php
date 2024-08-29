@@ -21,6 +21,10 @@
 
         </body>
     	<?php
+            global $serverBind, $serverPort;
+            $serverBind = "146.59.94.128";
+            $serverPort = "7777";
+
             global $page_id;
             $page_id = ( isset( $_REQUEST['page'] ) ) ? (int) $_REQUEST['page'] : 1;
         ?>

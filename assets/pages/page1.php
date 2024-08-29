@@ -76,8 +76,6 @@
     <div class="padding"></div>
     <section id="monitoring" class="monitoring">
         <?php
-            $serverBind = '46.174.48.235';
-            $serverPort = '7777';
             require_once("modules/SampQueryAPI.php"); 
 
             $query = new SampQueryAPI($serverBind, $serverPort);
@@ -143,7 +141,7 @@
                     </p>
                     <p><strong>Խաղացողների քանակը՝</strong> <?php echo $serverInfo['players']; ?>/ <?php echo $serverInfo['maxplayers']; ?>-ից</p>
                     <br>
-                    <a href="samp://127.0.0.1" class="gotoStart"><div class="ucpButton" style="font-weight:bold;text-align:center;border-radius:15px;">Միացի՛ր մեզ հիմա</div></a>
+                    <a href=<?php echo "samp://" . $serverBind . ":" . $serverPort; ?> class="gotoStart"><div class="ucpButton" style="font-weight:bold;text-align:center;border-radius:15px;">Միացի՛ր մեզ հիմա</div></a>
                 </div>
             </div>
         </div>
